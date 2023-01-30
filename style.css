@@ -1,3 +1,7 @@
+:root {
+    --font : 'Arvo', serif /* css variable, global scope */
+}
+
 /* element selector */
 main {
     display: flex;
@@ -5,7 +9,7 @@ main {
     align-items: center;
     height: 100vh; /* relative unit - 100% of viewport height */
     /* loaded google font */
-    font-family: 'Arvo', serif;
+    font-family: var(--font);
     background-color: rgb(215, 244, 215);
 }
 
@@ -58,7 +62,7 @@ button {
     /* hover effect */
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    font-family: 'Arvo', serif;
+    font-family: var(--font);
 }
 
 /* id selector */
