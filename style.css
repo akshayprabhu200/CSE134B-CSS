@@ -8,6 +8,14 @@
     2.7px 2.6px 4.2px -0.8px hsl(var(--shadow-color) / 0.11),
     6.7px 6.6px 10.6px -1.7px hsl(var(--shadow-color) / 0.11),
     16.4px 16.1px 25.9px -2.5px hsl(var(--shadow-color) / 0.11);
+
+  /* Colors */
+  --clr-primary-800: hsl(131, 50%, 20%);
+  --clr-primary-500: hsl(119, 87%, 29%);
+  --clr-primary-400: hsl(132, 38%, 49%);
+
+  --clr-secondary: hsl(0, 0%, 33%);
+  --clr-neutral: hsl(120, 57%, 90%);
 }
 
 /* Reset */
@@ -22,6 +30,7 @@
   */
 * {
   margin: 0;
+  font-display: swap;
 }
 
 /* element selector */
@@ -32,15 +41,15 @@ main {
   height: 100vh; /* relative unit - 100% of viewport height */
   /* loaded google font */
   font-family: var(--font);
-  background-color: hsl(120, 57%, 90%);
+  background-color: var(--clr-neutral);
 }
 
 /* style custom card tag */
 card {
-  background-color: #f5f5f5;
+  background-color: var(--clr-neutral);
   padding: 2rem;
   box-shadow: var(--shadow-elevation-medium);
-  border: 2px solid hsl(119, 87%, 29%);
+  border: 2px solid var(--clr-primary-500);
   border-radius: var(--border-radius);
   width: 30rem;
   height: 45rem;
@@ -59,7 +68,7 @@ p,
 button {
   /* text-align: center; */
   font-size: 18px;
-  color: hsl(0, 0%, 33%);
+  color: var(--clr-primary-500);
 }
 
 card > * + * {
@@ -67,22 +76,22 @@ card > * + * {
 }
 
 span {
-  font-size: 2em; /* relative unit */
+  font-size: 2rem; /* relative unit */
   display: block;
   /* text-align: center; */
-  color: hsl(131, 50%, 20%);
+  color: var(--clr-primary-800);
   padding-bottom: 10px;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 button {
   padding: 10px 20px;
   border-radius: 7px;
-  background-color: hsl(132, 38%, 49%);
+  background-color: var(--clr-primary-400);
   color: #fff;
   margin: 10px;
 
@@ -100,5 +109,5 @@ button {
 
 /* pseudo-class selector */
 button:hover {
-  background-color: hsl(131, 50%, 20%);
+  background-color: var(--clr-primary-800);
 }
