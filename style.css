@@ -16,6 +16,7 @@
 
   --clr-secondary: hsl(0, 0%, 33%);
   --clr-neutral: hsl(120, 57%, 90%);
+  --clr-background: hsl(0, 0%, 100%);
 }
 
 /* Reset */
@@ -46,7 +47,7 @@ main {
 
 /* style custom card tag */
 card {
-  background-color: var(--clr-neutral);
+  background-color: var(--clr-background);
   padding: 2rem;
   box-shadow: var(--shadow-elevation-medium);
   border: 2px solid var(--clr-primary-500);
@@ -68,7 +69,7 @@ p,
 button {
   /* text-align: center; */
   font-size: 18px;
-  color: var(--clr-primary-500);
+  color: var(--clr-secondary);
 }
 
 card > * + * {
@@ -92,7 +93,7 @@ button {
   padding: 10px 20px;
   border-radius: 7px;
   background-color: var(--clr-primary-400);
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   margin: 10px;
 
   /* hover effect */
