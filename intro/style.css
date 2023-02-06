@@ -11,7 +11,7 @@
 
   /* Colors */
   --clr-primary-800: hsl(131, 50%, 20%);
-  --clr-primary-500: hsl(119, 87%, 29%);
+  --clr-primary-500: hsl(119, 86%, 29%);
   --clr-primary-400: hsl(132, 38%, 49%);
 
   --clr-secondary: hsl(0, 0%, 33%);
@@ -31,7 +31,6 @@
   */
 * {
   margin: 0;
-  font-display: swap;
 }
 
 /* element selector */

@@ -1,0 +1,85 @@
+:root {
+    --color-header: hsl(20, 6%, 41%);
+    --color-left-sidebar: hsl(225, 70%, 72%);
+    --color-right-sidebar: hsl(225, 70%, 72%);
+    --color-main: hsl(202, 14%, 85%);
+    --color-footer: hsl(20, 6%, 41%);
+    --color-text: hsl(0, 0%, 100%);
+    --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: var(--font)
+}
+
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  height: 100vh;
+  gap: 0.3rem;
+}
+
+header {
+  padding: 2rem;
+  grid-column: 1 / 4;
+  background-color: var(--color-header);
+  color: var(--color-text);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: transform .2s;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+#left-side {
+  grid-column: 1 / 2;
+  background-color: var(--color-left-sidebar);
+  color: var(--color-text);
+  text-align: center;
+}
+
+main {
+  grid-column: 2 / 3;
+  background-color: var(--color-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-side {
+  grid-column: 3 / 4;
+  background-color: var(--color-right-sidebar);
+  color: var(--color-text);
+  text-align: center;
+}
+
+footer {
+  grid-column: 1 / 4;
+  background-color: var(--color-footer);
+  color: var(--color-text);
+  text-align: center;
+  padding: 2rem;
+}
+
+aside {
+  padding: 0.7rem;
+}
