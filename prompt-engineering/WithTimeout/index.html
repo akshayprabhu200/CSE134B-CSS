@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prompt Button Example</title>
+  </head>
+  <body>
+    <button id="promptButton">Prompt</button>
+    <p id="output"></p>
+
+    <script>
+      const promptButton = document.getElementById("promptButton");
+      const output = document.getElementById("output");
+
+      promptButton.addEventListener("click", () => {
+        output.textContent = ""; // Clear output tag
+
+        setTimeout(() => {
+          const input = prompt("Enter some text:");
+          output.textContent = `You entered: ${input}`;
+        }, 0);
+      });
+    </script>
+  </body>
+</html>
